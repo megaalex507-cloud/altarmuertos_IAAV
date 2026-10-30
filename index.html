@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altar de Muertos - Una Tradición Viva</title>
+    <style>
+        :root {
+            --cempasuchil: #FF9F00;
+            --morado: #4A154B;
+            --rosa-mexicano: #E0115F;
+            --blanco: #FFFFFF;
+            --negro: #1A1A1A;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--negro);
+            color: var(--blanco);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Decoración de Papel Picado */
+        .papel-picado {
+            background: repeating-linear-gradient(
+                90deg,
+                var(--rosa-mexicano),
+                var(--rosa-mexicano) 100px,
+                var(--cempasuchil) 100px,
+                var(--cempasuchil) 200px,
+                var(--morado) 200px,
+                var(--morado) 300px
+            );
+            height: 40px;
+            width: 100%;
+            position: relative;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 95% 100%, 90% 70%, 85% 100%, 80% 70%, 75% 100%, 70% 70%, 65% 100%, 60% 70%, 55% 100%, 50% 70%, 45% 100%, 40% 70%, 35% 100%, 30% 70%, 25% 100%, 20% 70%, 15% 100%, 10% 70%, 5% 100%, 0% 70%);
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(rgba(74, 21, 75, 0.8), rgba(26, 26, 26, 1)), url('https://unsplash.com') no-repeat center center/cover;
+        }
+
+        h1 {
+            color: var(--cempasuchil);
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+            font-family: 'Georgia', serif;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--rosa-mexicano);
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Sección del Altar */
+        .altar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .elemento-card {
+            background-color: #252525;
+            border: 2px solid var(--cempasuchil);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .elemento-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 159, 0, 0.3);
+        }
+
+        .elemento-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--cempasuchil);
+        }
+
+        .elemento-info {
+            padding: 20px;
+        }
+
+        .elemento-info h3 {
+            color: var(--rosa-mexicano);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        /* Decoración de Calaveras en los títulos */
+        .titulo-seccion {
+            text-align: center;
+            color: var(--cempasuchil);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .titulo-seccion::before, .titulo-seccion::after {
+            content: "💀";
+            margin: 0 15px;
+            font-size: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--morado);
+            border-top: 4px solid var(--cempasuchil);
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Papel Picado Superior -->
+    <div class="papel-picado"></div>
+
+    <header>
+        <h1>El Altar de Muertos</h1>
+        <div class="subtitle">Una ofrenda de amor y memoria</div>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <p>El altar de muertos es el elemento central de la celebración del <strong>Día de Muertos</strong> en México. Es una construcción sagrada donde los vivos honran a sus seres queridos difuntos, ofreciéndoles los alimentos, velas, flores y objetos que disfrutaban en vida para darles la bienvenida de vuelta al mundo terrenal.</p>
+        </section>
+
+        <h2 class="titulo-seccion">Elementos Esenciales</h2>
+
+        <div class="altar-grid">
+            <!-- Cempasúchil -->
+            <div class="elemento-card">
+                <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/E9E2/production/_115147895_gettyimages-1281554664.jpg.webp" alt="Flor de Cempasúchil">
+                <div class="elemento-info">
+                    <h3>Flor de Cempasúchil</h3>
+                    <p>Su color amarillo brillante y su fuerte aroma guían las almas de los difuntos hacia el altar. Tradicionalmente se esparcen los pétalos formando un camino.</p>
+                </div>
+            </div>
+
+            <!-- Velas -->
+            <div class="elemento-card">
+                <img src="https://scontent.ftij2-1.fna.fbcdn.net/v/t1.6435-9/123137260_3694009620618319_1390833298047705499_n.jpg?stp=dst-jpg_tt6&cstp=mx1898x1898&ctp=p526x296&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xFPlf-uX_O0Q7kNvwF4iWx7&_nc_oc=AdqrNP6oVOIYKpWKvUbfj4uVdr28dSeBVpxGdRZ8wDMbgV8_9ukhj-IwA1B1QXqw0uo&_nc_zt=23&_nc_ht=scontent.ftij2-1.fna&_nc_gid=Zhd-GCGJlNwyPdNGBy6kbg&_nc_ss=7b289&oh=00_AQRISe5htYs8vwyqNSb1ipJfS-kyUXO5xB8kYrlKfSBCTA&oe=6B0B7D24" alt="Velas y Veladoras">
+                <div class="elemento-info">
+                    <h3>Velas y Veladoras</h3>
+                    <p>La flama significa la luz, la fe y la esperanza. Sirve como una guía para que las almas puedan llegar a sus antiguos hogares y alumbrar su regreso.</p>
+                </div>
+            </div>
+
+            <!-- Pan de Muerto -->
+            <div class="elemento-card">
+                <img src="https://laroussecocina.mx/wp-content/uploads/2018/01/pan-de-muerto-001-larousse-cocina_0-1.jpg.webp" alt="Pan de Muerto">
+                <div class="elemento-info">
+                    <h3>Pan de Muerto</h3>
+                    <p>Representa la generosidad del anfitrión y el ciclo de la vida y la muerte. Las formas sobre el pan simbolizan los huesos y las lágrimas derramadas.</p>
+                </div>
+            </div>
+
+            <!-- Calaveritas de Azúcar -->
+            <div class="elemento-card">
+                <img src="https://aguabela.com.mx/images/slider/calaveritas-de-azucar-icono-altar-dia-de-muertos-slider.webp" alt="Calaveras de Azúcar">
+                <div class="elemento-info">
+                    <h3>Calaveritas de Azúcar</h3>
+                    <p>Aluden a la muerte siempre presente. Las calaveras de azúcar o chocolate decoradas con colores vivos recuerdan que la muerte también puede ser dulce.</p>
+                </div>
+            </div>
+
+            <!-- Papel Picado -->
+            <div class="elemento-card">
+                <img src="https://papelpicadoartemex.com/wp-content/uploads/2024/07/PapelPicadoMulticolorDecorativoAM2.jpg" alt="Papel Picado Mexicano">
+                <div class="elemento-info">
+                    <h3>Papel Picado</h3>
+                    <p>Representa el elemento del aire y la alegría festiva. Sus cortes artesanales traen color y movimiento a la ofrenda a través del viento.</p>
+                </div>
+            </div>
+
+            <!-- Agua y Banquete -->
+            <div class="elemento-card">
+                <img src="https://scontent.ftij2-1.fna.fbcdn.net/v/t1.6435-9/71729997_937560263284094_252600899422126080_n.jpg?stp=dst-jpg_tt6&cstp=mx1804x1569&ctp=s590x590&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rO6sIyWYN5AQ7kNvwG2LDc-&_nc_oc=Adoa07O5vgvWAiwp_5Y2kP6ofuh3pEJQtKz8paXD7js88xSNvUWVxNbgxvTFmcazknM&_nc_zt=23&_nc_ht=scontent.ftij2-1.fna&_nc_gid=mjVwQkuJHUBan7wbDhZfrQ&_nc_ss=7b289&oh=00_AQQe2YgJJ5dsmQEp0_QQqt2GkliTUGcPH93tRstbD4-5sQ&oe=6B0B4E59" alt="Comida tradicional del Altar">
+                <div class="elemento-info">
+                    <h3>Agua y Alimentos</h3>
+                    <p>El agua se ofrece para mitigar la sed de las almas después de su largo viaje. Se añaden además los platillos y bebidas favoritos de los difuntos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Papel Picado Inferior -->
+    <div class="papel-picado" style="transform: rotate(180deg); margin-top: 60px;"></div>
+
+    <footer>
+        <p><strong>Día de Muertos</strong> - Patrimonio Oral e Inmaterial de la Humanidad por la UNESCO.</p>
+        <p>Mantengamos vivas nuestras tradiciones. 🍂💀🌼</p>
+    </footer>
+
+</body>
+</html>
